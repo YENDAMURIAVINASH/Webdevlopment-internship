@@ -1,0 +1,111 @@
+.website{
+    display: grid;
+    grid-template-areas:"header header"
+                        "nav nav"
+                        "container container"
+                        "footer footer";
+    gap:5px;
+    background-color:#7dcb91;           /*#aef4c0; */
+    padding:5px;
+}
+.website>div {
+    background-color: rgba(245, 236, 236, 0.8);
+    padding:10px;
+}
+.website>div.header{
+    background-color:rgb(78, 125, 126) ;          /*cadetblue ; */
+    grid-area:header;
+    text-align: center;
+    color: white;
+}
+.website>div.nav{
+    background-color: rgb(247, 239, 229);
+    grid-area: nav;
+}
+.website>div.container{
+    grid-area: container;
+}
+.website>div.footer{
+    text-align: center;
+    grid-area: footer;
+    background-color: aliceblue;
+}
+a{
+    padding: 5px;
+    color:white;
+    background-color: rgb(205, 241, 205);
+}
+a:link{
+    color:rgb(246, 250, 246);
+    
+    text-decoration:none;
+    border-radius: 8px;
+}
+a:visited{
+    background-color:rgb(75, 147, 75) ;
+    text-decoration:none;
+    padding:5px;
+}
+a:active{
+    color:rgb(248, 248, 215);
+    text-decoration:none;
+    padding:5px;
+}
+a:hover{
+    color:rgb(199, 167, 167);
+    text-decoration:none;
+    padding:5px;
+    background-color: darkgreen;
+}
+.website > div.container > div.game{
+    max-width:500px;
+    margin:120px auto 80px auto;
+    background:white;
+    padding:10px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0, 0, 0, 0.2);
+    text-align:center;
+}
+
+img#dice {
+    width: 120px;
+    height: 120px;
+    margin: 20px 0;
+    padding-left: 5%;
+}
+
+
+input#guess {
+    padding: 10px;
+    font-size: 18px;
+    width: 60px;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+

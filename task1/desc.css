@@ -1,0 +1,61 @@
+.container{
+    display: grid;
+    grid-template-areas:"header header"
+                        "games introduction"
+                        "footer footer";
+    grid-template-columns: 1fr 6fr;
+    gap:5px;
+    background-color:#68a778;/* #aef4c0 */
+    padding:5px;
+}
+.container>div {
+    background-color: rgba(255,255,255,0.8);
+    padding:10px;
+}
+.container>div.header{
+    background-color:rgb(80, 126, 128) ;
+    grid-area:header;
+    text-align: center;
+}
+.container>div.games{
+    background-color: antiquewhite;
+    grid-area: games;
+}
+.container>div.introduction{
+    grid-area: introduction;
+}
+.container>div.footer{
+    text-align: center;
+    grid-area: footer;
+    background-color: aliceblue;
+}
+.container>div.header>h1{
+    color:white;
+}
+a{
+    padding: 5px;
+    color:white;
+    background-color: rgb(205, 241, 205);
+}
+a:link{
+    color:rgb(246, 250, 246);
+    
+    text-decoration:none;
+    border-radius: 8px;
+}
+a:visited{
+    background-color:rgb(75, 147, 75) ;
+    text-decoration:none;
+    padding:5px;
+}
+a:active{
+    color:rgb(248, 248, 215);
+    text-decoration:none;
+    padding:5px;
+}
+a:hover{
+    color:rgb(199, 167, 167);
+    text-decoration:none;
+    padding:5px;
+    background-color: darkgreen;
+}
