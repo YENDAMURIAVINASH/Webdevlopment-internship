@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0e0e10;
+  color: #fff;
+  line-height: 1.6;
+}
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00ffd5;
+}
+p, li {
+  font-size: 1rem;
+  color: #dcdcdc;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #111 0%, #000 100%);
+  overflow: hidden;
+}
+.hero-content {
+  z-index: 1;
+  text-align: center;
+  margin-top: 40px;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+.tagline {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #dcdcdc;
+}
+.cta-buttons {
+  margin-top: 25px;
+}
+.btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #00ffd5;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #00bba3;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #00ffd5;
+  object-fit: cover;
+  box-shadow: 0 0 15px #00ffd5;
+}
+
+/* Cards and Lists */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.card, .edu-card {
+  background: #1a1a1d;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 255, 213, 0.1);
+  transition: transform 0.4s ease;
+}
+.card:hover, .edu-card:hover {
+  transform: rotateY(5deg) scale(1.03);
+}
+.skills ul, .education {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.contact a {
+  color: #00ffd5;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
