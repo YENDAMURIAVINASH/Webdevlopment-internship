@@ -20,6 +20,8 @@ This is a fully responsive and interactive personal portfolio website built usin
 
 📸 Live Preview or Video Demo
 🎥 Will be added soon on LinkedIn
+
+https://www.linkedin.com/posts/avinash-yendamuri-927b54289_portfoliowebsite-webdesign-frontenddevelopment-activity-7343331231205421056-RcLm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYdiS8BK1OZVnP8zTFVx-SKLv2Aai6QoJk
 ..
 📁 Project Structure
 
